@@ -1,9 +1,9 @@
 ## Related Tickets
 -
-## WHAT (thực hiện chức năng gì)
+## WHAT
 -
-## HOW (thực hiện như thế nào)
+## HOW
 -
-## WHY (lý do tại sao)
+## WHY
 -
-## EVIDENCE (Hình ảnh pass coding convention như eslint, video quay demo về UI, UX thành phần đang thực hiện trong pull)
+## EVIDENCE
