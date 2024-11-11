@@ -1,0 +1,242 @@
+.intro {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 6px solid #f9f9f9;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.intro:before {
+  -webkit-transform: translate(-50%, -50%);
+  border-radius: 16px;
+  border: 6px solid #f9f9f9;
+  box-sizing: border-box;
+  content: '';
+  height: calc(100% - 80px);
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  z-index: -1;
+}
+
+.intro__description {
+  color: #2b3441;
+  font-size: 16px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  padding-top: 40px;
+  width: 50%;
+}
+
+.intro__image {
+  margin: -130px -35px -115px 40px;
+}
+
+.intro__image img {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  height: auto;
+  max-width: 100%;
+}
+
+.business {
+  margin-bottom: 50px;
+}
+
+
+
+.business ul {
+  display: flex;
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.business li {
+  width: 50%;
+}
+
+.business li:first-child {
+  margin-right: 20px;
+}
+
+.business li:last-child {
+  margin-left: 20px;
+}
+
+.business__item {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #d7dadc;
+  padding: 48px;
+  position: relative;
+}
+
+.business__item--active {
+  background-color: #c01111;
+  border: 1px solid #c01111;
+}
+
+.business__item--active:before {
+  background-color: #d82329;
+  border-radius: 50%;
+  content: '';
+  height: 66px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  transform: translateY(-50%);
+  width: 66px;
+}
+
+.business__item:nth-child(2):before {
+  -webkit-transform: translateY(-50%);
+  background-color: #c01111;
+  border-radius: 50%;
+  bottom: 166px;
+  content: '';
+  height: 36px;
+  position: absolute;
+  right: -83px;
+  transform: translateY(-50%);
+  width: 36px;
+}
+
+.business__item:nth-child(2):after {
+  background-color: #fff7f7;
+  border-radius: 50%;
+  bottom: -85px;
+  content: '';
+  height: 66px;
+  position: absolute;
+  right: 55%;
+  width: 66px;
+}
+
+.business__sub-title {
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.business__item--active .business__sub-title {
+  color: #fff;
+}
+
+.business__sub-title:before {
+  -webkit-transform: translate(-50%, -50%);
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  content: '';
+  height: 38px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  z-index: -1;
+}
+
+.business__item--active .business__sub-title:before {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.business__title {
+  color: #2b3441;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.business__item--active .business__title {
+  color: #fff;
+}
+
+.business__description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+
+.business__item--active .business__description {
+  color: #fff;
+}
+
+.business__btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.business__btn .btn__icon {
+  background-color: rgba(192, 17, 17, .1);
+  border-radius: 50%;
+  display: inline-block;
+  height: 24px;
+  line-height: 20px;
+  margin-left: 12px;
+  text-align: center;
+  width: 24px;
+}
+
+.business__btn.btn--black .btn__icon {
+  background-color: rgba(255, 255, 255, .1)
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    display: block;
+  }
+
+  .intro__description {
+    font-size: 14px;
+    padding: 25px;
+    width: 100%;
+  }
+
+  .intro__image {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .business ul {
+    display: block;
+  }
+
+  .business li {
+    width: 100%;
+  }
+
+  .business li:first-child {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .business li:last-child {
+    margin-left: 0;
+  }
+
+  .business__title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .business__description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .business {
+    margin-bottom: 40px;
+  }
+}
