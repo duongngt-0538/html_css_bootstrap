@@ -1,0 +1,148 @@
+.career-section {
+  margin-bottom: 80px;
+}
+
+
+
+.career-intro {
+  position: relative;
+  text-align: center;
+}
+
+.career-intro__content {
+  background-image: url('/assets/images/career-bg.jpg');
+  background-size: cover;
+  border-radius: 16px;
+  color: #fff;
+  padding: 0 5%;
+  position: relative;
+}
+
+.career-intro__content:before {
+  background-color: rgba(192, 17, 17, .9);
+  border-radius: 16px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.career-intro__content:after {
+  background-color: #ef3f45;
+  border-radius: 50%;
+  content: '';
+  height: 42px;
+  left: 75px;
+  position: absolute;
+  top: 75px;
+  width: 42px;
+  z-index: 0;
+}
+
+.career-intro__sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 100px;
+  position: relative;
+}
+
+
+
+.career-intro__sub-title:before {
+  -webkit-transform: translateX(-50%);
+  background-color: #d82329;
+  border-radius: 50%;
+  content: '';
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  top: 46px;
+  transform: translateX(-50%);
+  width: 200px;
+  z-index: -1;
+}
+
+.career-intro__content>div {
+  position: relative;
+  z-index: 1;
+}
+
+.career-intro__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
+
+
+.career-intro__description {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.career-intro__sub-description {
+  font-size: 24px;
+}
+
+.career-intro__btn-wrap {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.career-intro__btn-wrap .button {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 406px;
+}
+
+.career-intro__btn-wrap .btn__icon {
+  background-color: rgba(192, 17, 17, .1);
+  border-radius: 50%;
+  display: inline-block;
+  height: 24px;
+  line-height: 22px;
+  margin-left: 12px;
+  position: relative;
+  text-align: center;
+  top: -1px;
+  width: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .career-section {
+    margin-bottom: 20px;
+  }
+
+  .career-intro__content:after {
+    left: 55px;
+    top: 55px;
+  }
+
+  .career-intro__title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .career-intro__description {
+    font-size: 18px;
+  }
+
+  .career-intro__sub-description {
+    font-size: 14px;
+  }
+
+  .career-intro__btn-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .career-intro__sub-title {
+    font-size: 16px;
+  }
+}
