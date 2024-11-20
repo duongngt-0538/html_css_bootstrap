@@ -185,23 +185,23 @@ main {
 }
 
 .video-container {
-  width: 100%;
+  padding: 0;
 }
 
-.video-container .video-desktop {
+.video-desktop {
   overflow: hidden;
   padding-bottom: 41.667%;
   position: relative;
 }
 
-.video-container .video-desktop video {
+.video-desktop video {
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.video-container .video-mobile {
+.video-mobile {
   display: none;
 }
 

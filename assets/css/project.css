@@ -28,23 +28,18 @@
 }
 
 .project-container {
-  display: flex;
   flex-wrap: wrap;
   gap: 100px;
 }
 
 .project-stats,
 .project-carousel {
-  flex: 1;
   min-width: 0;
-}
-
-.project-stats {
-  max-width: 50%;
 }
 
 .project-carousel {
   max-width: 50%;
+  position: relative;
 }
 
 .project-heading {
@@ -118,7 +113,6 @@
   padding: 0 125px;
 }
 
-
 .projects__btn .btn__icon {
   background-color: rgba(255, 255, 255, .1);
   border-radius: 50%;
@@ -135,6 +129,10 @@
   justify-content: center;
   margin-top: 90px;
   overflow: auto;
+}
+
+.project-carousel .carousel-inner {
+  width: 65%;
 }
 
 .project-carousel .carousel__item {
@@ -198,41 +196,6 @@
   width: 24px;
 }
 
-.project-carousel .carousel__item {
-  flex: 0 0 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transition: transform 0.6s ease-in-out, opacity 0.6s ease-out;
-  width: 100%;
-}
-
-/* When a carousel item is active, bring it into view */
-.project-carousel #project-carousel-1:checked ~ .carousel__item-1,
-.project-carousel #project-carousel-2:checked ~ .carousel__item-2,
-.project-carousel #project-carousel-3:checked ~ .carousel__item-3 {
-  left: 0;
-  opacity: 1;
-  position: static;
-  transform: translateX(0);
-}
-
-/* Slide in from left when clicking 'previous' */
-.project-carousel #project-carousel-1:checked ~ .carousel__item-3,
-.project-carousel #project-carousel-2:checked ~ .carousel__item-1,
-.project-carousel #project-carousel-3:checked ~ .carousel__item-2 {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-/* Slide in from right when clicking 'next' */
-.project-carousel #project-carousel-1:checked ~ .carousel__item-2,
-.project-carousel #project-carousel-2:checked ~ .carousel__item-3,
-.project-carousel #project-carousel-3:checked ~ .carousel__item-1 {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
 .project-carousel .carousel__item img {
   display: block;
 }
@@ -240,12 +203,12 @@
 .project-carousel .carousel-control {
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
+  align-items: baseline;
   background: rgba(148, 155, 164, .1);
   border-radius: 50%;
   color: #949ba4;
   cursor: pointer;
   cursor: pointer;
-  display: none;
   font-size: 40px;
   height: 40px;
   line-height: 35px;
@@ -258,11 +221,11 @@
 }
 
 .project-carousel .carousel-control.prev {
-  left: 70%;
+  left: 60%;
 }
 
 .project-carousel .carousel-control.next {
-  right: 0;
+  left: 75%;
 }
 
 .project-carousel .carousel-control:hover {
@@ -270,10 +233,9 @@
   color: #fff;
 }
 
-.project-carousel #project-carousel-1:checked ~ .control-1,
-.project-carousel #project-carousel-2:checked ~ .control-2,
-.project-carousel #project-carousel-3:checked ~ .control-3 {
-  display: block;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
 }
 
 @media screen and (max-width: 767px) {
