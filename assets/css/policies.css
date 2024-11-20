@@ -2,15 +2,6 @@
   margin-bottom: 60px;
 }
 
-.policies__content {
-  display: flex;
-}
-
-.policies__content-left,
-.policies__content-right {
-  width: 50%;
-}
-
 .list-content {
   margin-top: 30px;
 }

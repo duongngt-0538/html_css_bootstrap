@@ -17,57 +17,51 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/bootstrap.css" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="stylesheet" href="/assets/css/header.css" />
   <link rel="stylesheet" href="/assets/css/footer.css" />
   <link rel="stylesheet" href="/assets/css/business.css" />
   <link rel="stylesheet" href="/assets/css/project.css" />
   <link rel="stylesheet" href="/assets/css/career.css" />
+  <link rel="stylesheet" href="/assets/css/policies.css" />
   <link rel="stylesheet" href="/assets/css/news.css" />
+  <script src="/assets/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
   <header id="header" class="header">
-    <div class="header-container">
-      <div class="header-logo">
-        <a href="/src/pages/en.html">
-          <img src="/assets/images/logo-sun@2x.png" alt="Sun* Inc">
-        </a>
-      </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid header-container">
+          <a class="navbar-brand" href="/src/pages/vi.html">
+            <img src="/assets/images/logo-sun@2x.png" alt="Sun* Inc">
+          </a>
 
-      <nav class="header-nav">
-        <ul class="nav-menu">
-          <li><a href="/src/pages/en.html" class="active">Home</a></li>
-          <li><a href="/#">About us</a></li>
-          <li><a href="/#">Career</a></li>
-          <li><a href="/#">Environment</a></li>
-          <li><a href="/#">Projects</a></li>
-          <li><a href="/#">News</a></li>
-        </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse header-nav" id="navbarNav">
+            <ul class="nav-menu navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="/#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#">Career</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#">Environment</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="/#">News</a></li>
+            </ul>
+          </div>
+
+          <div class="header-language">
+            <ul class="language-switcher">
+              <li><a href="/src/pages/vi.html" lang="vi" hreflang="vi">VI</a></li>
+              <li><a href="/src/pages/en.html" lang="en-US" hreflang="en-US"  class="active-lang">EN</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
-      <label for="menu-toggle" class="menu-button" aria-label="Toggle Menu">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <nav class="header-nav--dropdown" aria-hidden="true">
-        <ul class="nav-menu">
-          <li><a href="/src/pages/en.html" class="active">Home</a></li>
-          <li><a href="/#">About us</a></li>
-          <li><a href="/#">Career</a></li>
-          <li><a href="/#">Environment</a></li>
-          <li><a href="/#">Projects</a></li>
-          <li><a href="/#">News</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-language">
-        <ul class="language-switcher">
-          <li><a href="/src/pages/vi.html" lang="vi" hreflang="vi">VI</a></li>
-          <li><a href="/src/pages/en.html" lang="en-US" hreflang="en-US" class="active-lang">EN</a></li>
-        </ul>
-      </div>
     </div>
   </header>
 
@@ -91,8 +85,8 @@
         </div>
       </div>
       <div class="container">
-        <div class="intro">
-          <div class="intro__description">
+        <div class="intro row">
+          <div class="intro__description col-md-6">
             As a Digital Creative Studio, Sun* always prioritize the spirit of owning the
             products, thinking creatively in any project to bring the most "<strong>Awesome</strong>" experience to
             end-users.
@@ -101,7 +95,7 @@
               Platform</strong>",
             Sun* has always been step by step with technology creating great value for society.
           </div>
-          <div class="intro__image">
+          <div class="intro__image col-md-6">
             <img src="/assets/images/intro-business.png" alt="Sun* Inc. Tuyển Dụng">
           </div>
         </div>
@@ -109,117 +103,119 @@
     </section>
     <section class="business-section-2 business">
       <div class="container">
-        <ul>
-          <li class="business__item business__item--active">
-            <div class="business__sub-title">Digital Creative Studio</div>
-            <div class="business__title">Creative <br>&amp; Engineering</div>
-            <div class="business__description">
-              Abundant human resource specializing in technology, design and business.
+        <div class="row g-3">
+          <div class="pr-md-2 col-md-6">
+            <div class="business__item business__item--active">
+              <div class="business__sub-title">Digital Creative Studio</div>
+              <div class="business__title">Creative <br>&amp; Engineering</div>
+              <div class="business__description">
+                Abundant human resource specializing in technology, design and business.
+              </div>
+              <a class="button business__btn btn--white btn--size-large btn--round-large" href="/#" target="_blank"
+                rel="nofollow">
+                See more <span class="btn__icon">→</span>
+              </a>
             </div>
-            <a class="button business__btn btn--white btn--size-large btn--round-large" href="/#" target="_blank"
-              rel="nofollow">
-              See more <span class="btn__icon">→</span>
-            </a>
-          </li>
-          <li class="business__item">
-            <div class="business__sub-title">Digital Creative Studio</div>
-            <div class="business__title">Talent <br>Platform</div>
-            <div class="business__description">
-              Human resource solutions to support sustainable business growth.
+          </div>
+          <div class="pr-md-2 col-md-6">
+            <div class="business__item">
+              <div class="business__sub-title">Digital Creative Studio</div>
+              <div class="business__title">Talent <br>Platform</div>
+              <div class="business__description">
+                Human resource solutions to support sustainable business growth.
+              </div>
+              <a class="button business__btn btn--black btn--size-large btn--round-large" href="/#" target="_blank"
+                rel="nofollow">
+                See more <span class="btn__icon">→</span>
+              </a>
             </div>
-            <a class="button business__btn btn--black btn--size-large btn--round-large" href="/#" target="_blank"
-              rel="nofollow">
-              See more <span class="btn__icon">→</span>
-            </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="project-section">
       <div class="container project-container">
-        <div class="project-stats">
-          <div class="wrap">
-            <h2 class="heading-title project-heading">Our Project</h2>
+        <div class="row">
+          <div class="project-stats col-md-6">
+            <div class="wrap">
+              <h2 class="heading-title project-heading">Our Project</h2>
+            </div>
+            <div class="counter-container">
+              <ul>
+                <li>
+                  <div class="counter">
+                    <span class="counter__number">200</span><span class="counter__label">++</span>
+                  </div>
+                  <div class="counter__title">Clients</div>
+                </li>
+                <li>
+                  <div class="counter">
+                    <span class="counter__number">300</span><span class="counter__label">++</span>
+                  </div>
+                  <div class="counter__title">Supported Services</div>
+                </li>
+              </ul>
+            </div>
+            <a href="/#" target="_blank"
+              class="carousel__btn button projects__btn btn--black btn--size-large btn--round-large">
+              See all projects
+              <span class="btn__icon">→</span>
+            </a>
           </div>
-          <div class="counter-container">
-            <ul>
-              <li>
-                <div class="counter">
-                  <span class="counter__number">200</span><span class="counter__label">++</span>
+          <div id="projectCarousel" class="carousel slide project-carousel col-md-6" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel__item carousel__item-1">
+                <img src="/assets/images/SSK.png" alt="Project 1">
+                <div class="carousel__content">
+                  <div class="carousel__sub-title">SSK Company Limited</div>
+                  <h6 class="carousel__title"> <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> SSK Project </a>
+                  </h6>
+                  <div class="carousel__description">Challenge to energize people and society with sports data.
+                  </div>
+                  <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
+                      class="btn__icon">→</span></a>
                 </div>
-                <div class="counter__title">Clients</div>
-              </li>
-              <li>
-                <div class="counter">
-                  <span class="counter__number">300</span><span class="counter__label">++</span>
+              </div>
+              <div class="carousel-item carousel__item carousel__item-2">
+                <img src="/assets/images/zenkigen_01.png" alt="Project 2">
+                <div class="carousel__content">
+                  <div class="carousel__sub-title">Công ty TNHH ZENKIGEN</div>
+                  <h6 class="carousel__title">
+                    <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> HARUTAKA Project </a>
+                  </h6>
+                  <div class="carousel__description">
+                    “HARUTAKA” allows companies and job seekers/ applicants to interview on the web or in video at any
+                    time, in any place.
+                  </div>
+                  <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
+                      class="btn__icon">→</span></a>
                 </div>
-                <div class="counter__title">Supported Services</div>
-              </li>
-            </ul>
-          </div>
-          <a href="/#" target="_blank"
-            class="carousel__btn button projects__btn btn--black btn--size-large btn--round-large">
-            See all projects
-            <span class="btn__icon">→</span>
-          </a>
-        </div>
-        <div class="carousel project-carousel">
-          <div class="carousel-inner">
-            <input class="carousel-open" type="radio" id="project-carousel-1" name="project-carousel" hidden checked>
-            <input class="carousel-open" type="radio" id="project-carousel-2" name="project-carousel" hidden>
-            <input class="carousel-open" type="radio" id="project-carousel-3" name="project-carousel" hidden>
-
-            <div class="carousel__item carousel__item-1">
-              <img src="/assets/images/SSK.png" alt="Project 1">
-              <div class="carousel__content">
-                <div class="carousel__sub-title">SSK Company Limited</div>
-                <h6 class="carousel__title"> <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> SSK Project </a>
-                </h6>
-                <div class="carousel__description">Challenge to energize people and society with sports data.
+              </div>
+              <div class="carousel-item carousel__item carousel__item-3">
+                <img src="/assets/images/Kurashicom.png" alt="Project 3">
+                <div class="carousel__content">
+                  <div class="carousel__sub-title">Kurashicom Inc</div>
+                  <h6 class="carousel__title">
+                    <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> KURASHICOM Project </a>
+                  </h6>
+                  <div class="carousel__description">
+                    App development helps to realize the lifestyle that you want
+                  </div>
+                  <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
+                      class="btn__icon">→</span></a>
                 </div>
-                <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
-                    class="btn__icon">→</span></a>
               </div>
             </div>
-            <div class="carousel__item carousel__item-2">
-              <img src="/assets/images/zenkigen_01.png" alt="Project 2">
-              <div class="carousel__content">
-                <div class="carousel__sub-title">Công ty TNHH ZENKIGEN</div>
-                <h6 class="carousel__title">
-                  <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> HARUTAKA Project </a>
-                </h6>
-                <div class="carousel__description">
-                  “HARUTAKA” allows companies and job seekers/ applicants to interview on the web or in video at any
-                  time, in any place.
-                </div>
-                <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
-                    class="btn__icon">→</span></a>
-              </div>
-            </div>
-            <div class="carousel__item carousel__item-3">
-              <img src="/assets/images/Kurashicom.png" alt="Project 3">
-              <div class="carousel__content">
-                <div class="carousel__sub-title">Kurashicom Inc</div>
-                <h6 class="carousel__title">
-                  <a href="/#" target="_blank" rel="nofollow" tabindex="-1"> KURASHICOM Project </a>
-                </h6>
-                <div class="carousel__description">
-                  App development helps to realize the lifestyle that you want
-                </div>
-                <a href="/#" target="_blank" class="carousel__btn button btn--text-primary btn--text">View Detail<span
-                    class="btn__icon">→</span></a>
-              </div>
-            </div>
-
-            <label for="project-carousel-3" class="carousel-control prev control-1">‹</label>
-            <label for="project-carousel-2" class="carousel-control next control-1">›</label>
-
-            <label for="project-carousel-1" class="carousel-control prev control-2">‹</label>
-            <label for="project-carousel-3" class="carousel-control next control-2">›</label>
-
-            <label for="project-carousel-2" class="carousel-control prev control-3">‹</label>
-            <label for="project-carousel-1" class="carousel-control next control-3">›</label>
-
+            <button class="carousel-control-prev carousel-control prev" type="button" data-bs-target="#projectCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">‹</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-control next" type="button" data-bs-target="#projectCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">›</span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -501,115 +497,121 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-section">
-      <div class="footer-logo">
-        <a href="/src/pages/en.html">
-          <img src="/assets/images/logo-sun@2x.png" alt="Sun* Inc. Tuyển Dụng" />
-        </a>
-      </div>
-      <div class="footer-info">
-        <h2>Who are we?</h2>
-        <ul>
-          <li>
-            <a href="/#">Vision, mission</a>
-          </li>
-          <li>
-            <a href="/#">Core values</a>
-          </li>
-          <li>
-            <a href="/#">The meaning of the name Sun*</a>
-          </li>
-        </ul>
+    <div class="footer-section container">
+      <div class="row">
+        <div class="footer-logo col-md-3">
+          <a href="/src/pages/en.html">
+            <img src="/assets/images/logo-sun@2x.png" alt="Sun* Inc. Tuyển Dụng" />
+          </a>
+        </div>
+
+        <div class="footer-info col-md-3">
+          <h2>Who are we?</h2>
+          <ul>
+            <li>
+              <a href="/#">Vision, mission</a>
+            </li>
+            <li>
+              <a href="/#">Core values</a>
+            </li>
+            <li>
+              <a href="/#">The meaning of the name Sun*</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-info col-md-3">
+          <h2>What do we do?</h2>
+          <ul>
+            <li>
+              <a href="/#">Creative & Engineering</a>
+            </li>
+            <li>
+              <a href="/#">Talent Platform</a>
+            </li>
+            <li>
+              <a href="/#">Our projects</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-info col-md-3">
+          <h2>Updated News</h2>
+          <ul>
+            <li>
+              <a href="/#">Culture - Events</a>
+            </li>
+            <li>
+              <a href="/#">Recruitment</a>
+            </li>
+            <li>
+              <a href="/#">Benefits and perks</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-info">
-        <h2>What do we do?</h2>
-        <ul>
-          <li>
-            <a href="/#">Creative & Engineering</a>
-          </li>
-          <li>
-            <a href="/#">Talent Platform</a>
-          </li>
-          <li>
-            <a href="/#">Our projects</a>
-          </li>
-        </ul>
-      </div>
+      <div class="row">
+        <div class="footer-info col-md-3"></div>
+        <div class="footer-info col-md-3">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="/src/pages/en.html">Phone: 84-24-3795-5417</a></li>
+            <li>
+              <a href="/src/pages/en.html">Email: hr@sun-asterisk.com</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="footer-info">
-        <h2>Updated News</h2>
-        <ul>
-          <li>
-            <a href="/#">Culture - Events</a>
-          </li>
-          <li>
-            <a href="/#">Recruitment</a>
-          </li>
-          <li>
-            <a href="/#">Benefits and perks</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-section">
-      <div class="footer-info"></div>
-      <div class="footer-info">
-        <h2>Contact</h2>
-        <ul>
-          <li><a href="/src/pages/en.html">Phone: 84-24-3795-5417</a></li>
-          <li>
-            <a href="/src/pages/en.html">Email: hr@sun-asterisk.com</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-info">
-        <h2>Office</h2>
-        <ul>
-          <li>
-            <div>T13, Keangnam Hanoi Landmark Tower, Pham Hung, Nam Tu Liem, Hanoi</div>
-          </li>
-          <li>
-            <div>4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da Nang</div>
-          </li>
-          <li>
-            <div>9th Floor, L'Mak Long Tower, 101-103 Nguyen Cuu Van, Ward 17, Binh Thanh District, Ho Chi Minh City
-            </div>
-          </li>
-          <li>
-            <div>Tokyo Office - Cebu Office - Phnom Penh Office</div>
-          </li>
-        </ul>
+        <div class="footer-info col-md-6">
+          <h2>Office</h2>
+          <ul>
+            <li>
+              <div>T13, Keangnam Hanoi Landmark Tower, Pham Hung, Nam Tu Liem, Hanoi</div>
+            </li>
+            <li>
+              <div>4F, FHome Building, 16 Ly Thuong Kiet Str., Hai Chau district, Da Nang</div>
+            </li>
+            <li>
+              <div>9th Floor, L'Mak Long Tower, 101-103 Nguyen Cuu Van, Ward 17, Binh Thanh District, Ho Chi Minh City
+              </div>
+            </li>
+            <li>
+              <div>Tokyo Office - Cebu Office - Phnom Penh Office</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="footer-divider"></div>
 
-    <div class="footer-section">
-      <div class="footer-bear">
-        <a href="/src/pages/en.html">
-          <img src="/assets/images/bear-footer@2x.png" alt="Sun* Inc. Tuyển Dụng" style="max-height: 40px" />
-        </a>
-      </div>
-      <div class="footer-bottom">
-        <p>@ 2020 Sun-asterisk. All rights reserved.</p>
-      </div>
+    <div class="footer-section container">
+      <div class="row">
+        <div class="footer-bear col-2 col-md-1">
+          <a href="/src/pages/en.html">
+            <img src="/assets/images/bear-footer@2x.png" alt="Sun* Inc. Tuyển Dụng" style="max-height: 40px" />
+          </a>
+        </div>
 
-      <div class="footer-social">
-        <a href="https://www.youtube.com/channel/UCzFu3tWPz55kR9dH9i17MnA" target="_blank">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://www.facebook.com/SunAsteriskVietnam" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/sunasterisk/" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="/#" target="_blank">
-          <span><img src="/assets/images/news-sun.png" alt="Sun* Inc. Tuyển Dụng" /></span>
-        </a>
+        <div class="footer-bottom col-10 col-md-6">
+          <p>@ 2020 Sun-asterisk. All rights reserved.</p>
+        </div>
+
+        <div class="footer-social col-12 col-md-5">
+          <a href="https://www.youtube.com/channel/UCzFu3tWPz55kR9dH9i17MnA" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/SunAsteriskVietnam" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/sunasterisk/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="/#" target="_blank">
+            <span><img src="/assets/images/news-sun.png" alt="Sun* Inc. Tuyển Dụng" /></span>
+          </a>
+        </div>
       </div>
     </div>
 
